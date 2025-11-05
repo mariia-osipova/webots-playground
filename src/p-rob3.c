@@ -56,6 +56,29 @@ void close_gripper() {
 }
 
 int main(int argc, char **argv) {
+
+  // Display the welcome message.
+  printf("Start the drone...\n");
+
+  // Wait one second.
+  while (wb_robot_step(timestep) != -1) {
+    if (wb_robot_get_time() > 1.0)
+      break;
+  }
+
+  // Display manual control message.
+  printf("You can control the robot with your computer keyboard:\n");
+  printf("- 'up': move .\n");
+  printf("- 'down': move backward.\n");
+  printf("- 'right': turn right.\n");
+  printf("- 'left': turn left.\n");
+  printf("- 'shift + up': increase the target altitude.\n");
+  printf("- 'shift + down': decrease the target altitude.\n");
+  printf("- 'shift + right': strafe right.\n");
+  printf("- 'shift + left': strafe left.\n");
+
+
+
   wb_robot_init();
 
   for (int i = 0; i < MOTOR_NUMBER; ++i)
