@@ -1,1 +1,2 @@
-![Screen Recording 2025-11-05 at 3.52.20 PM.gif](docs/Screen%20Recording%202025-11-05%20at%203.52.20%20PM.gif)
+![demo1.gif](docs/demo1.gif)
+![demo2.gif](docs/demo2.gif)
